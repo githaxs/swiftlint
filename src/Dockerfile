@@ -1,4 +1,7 @@
+FROM norionomura/swiftlint:latest as swiftlint
+
 FROM public.ecr.aws/lambda/python:3.8 as deps
+COPY --from=swiftlint /usr/bin/swiftlint /usr/bin
 
 ARG GITHUB_TOKEN
 

@@ -1,18 +1,17 @@
 version: v2
 name: Swift Lint
 slug: swift-lint
-type: code_analysis
-summary: Update me
+type: content
+summary: A tool to enforce Swift style and conventions.
 description: |
-  Fill me out
+  A tool to enforce Swift style and conventions.
 subscription_level: 1
 default_configuration:
   installation:
     org: false
-parameters:
-  - name: foo
-    description: bar
-
+memory: 512
+timeout: 240
+storage: 1024
 subscribed_events:
   - pull_request.opened
   - pull_request.reopened
